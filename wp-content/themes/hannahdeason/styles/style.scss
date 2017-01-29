@@ -1,0 +1,48 @@
+/*!
+Theme Name: Hannah Deason Theme
+Description: Child theme for Avada theme
+Author: Hannah Deason
+Author URI: https://hannahdeason.com
+Template: Avada
+Version: 1.0.0
+Text Domain:  Avada
+*/
+
+@import 'typography';
+
+/*
+AVADA THEME OPTIONS OVERRIDES
+ */
+.fusion-header .fusion-logo {
+  margin: 0 !important;
+}
+
+.fusion-main-menu > ul > li > a:hover {
+  color: $color-grey !important;
+}
+
+.fusion-copyright-content {
+  font-family: $font-family-secondary !important;
+}
+
+/*
+Logo/Brand styles
+ */
+.hd-brand {
+  @include title-1;
+}
+
+/*
+ * Hero styles
+ */
+.hero {
+  .hero__image {
+    .fusion-column-wrapper {
+      min-height: 700px;
+    }
+  }
+
+  .hero__content {
+    color: $color-white;
+  }
+}

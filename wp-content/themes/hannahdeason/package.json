@@ -1,0 +1,18 @@
+{
+  "name": "hannahdeason-theme",
+  "version": "1.0.0",
+  "description": "Hannah Deason Wordpress Theme",
+  "main": "index.js",
+  "repository": "git+https://github.com/hadeason/hannahdeason.com",
+  "author": "Hannah Deason",
+  "license": "MIT",
+  "scripts": {
+    "compile": "node bin/compile",
+    "watch": "node-sass styles/style.scss style.css --output-style compressed --source-map true --watch"
+  },
+  "devDependencies": {
+    "fs-extra": "^2.0.0",
+    "node-sass": "^4.4.0",
+    "path": "^0.12.7"
+  }
+}

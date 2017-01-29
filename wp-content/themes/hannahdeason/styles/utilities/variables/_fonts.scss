@@ -1,0 +1,49 @@
+/*
+Font Files
+ */
+$fonts-path: 'fonts/';
+$font-family-avenir: 'Avenir-LT-Std-85-Heavy';
+$font-family-lulo: 'Lulo-Clean-W01-One-Bold';
+$font-family-helvetica: 'Helvetica-W01-Light';
+$font-family-marzo: 'Marzo-W00-Regular';
+
+@mixin font-face ($family) {
+  font-family: $family;
+  src: url($fonts-path + $family + '.eot'); /* IE9 Compat Modes */
+  src: url($fonts-path + $family + '.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url($fonts-path + $family + '.woff2') format('woff2'), /* Super Modern Browsers */
+  url($fonts-path + $family + '.woff') format('woff'), /* Pretty Modern Browsers */
+  url($fonts-path + $family + '.ttf')  format('truetype'), /* Safari, Android, iOS */
+  url($fonts-path + $family + '.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face { @include font-face ($font-family-avenir); }
+@font-face { @include font-face ($font-family-lulo); }
+@font-face { @include font-face ($font-family-helvetica); }
+@font-face { @include font-face ($font-family-marzo); }
+
+/*
+Font Family
+ */
+$font-family-text: $font-family-avenir;
+$font-family-secondary: $font-family-helvetica;
+$font-family-title: $font-family-lulo;
+$font-family-title-secondary: $font-family-marzo;
+
+/*
+Font Size
+ */
+$font-size-small: 12px;
+$font-size-regular: 16px;
+$font-size-large: 24px;
+$font-size-x-large: 32px;
+$font-size-xx-large: 48px;
+$font-size-xxx-large: 64px;
+$font-size-xxxx-large: 96px;
+
+/*
+Font Weight
+ */
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-bold: 600;
