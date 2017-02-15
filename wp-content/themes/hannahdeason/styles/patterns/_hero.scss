@@ -1,0 +1,30 @@
+/*
+ * Hero styles
+ */
+.hero {
+  &.hero--light {
+    .hero__content {
+      color: $color-black-light;
+
+      p, h1, h2, h3, h4, h5, h6 {
+        color: $color-black-light;
+      }
+    }
+  }
+
+  .hero__image {
+    .fusion-column-wrapper {
+      min-height: 700px;
+    }
+  }
+
+  .hero__content {
+    color: $color-white;
+
+    &.hero__content--small {
+      h1 {
+        font-size: 40px;
+      }
+    }
+  }
+}

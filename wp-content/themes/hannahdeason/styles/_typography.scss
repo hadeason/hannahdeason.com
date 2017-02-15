@@ -1,6 +1,10 @@
 @import 'utilities/variables/fonts';
 @import 'utilities/variables/colors';
 
+@mixin font-size-xxxx-large {
+  font-size: $font-size-xxxx-large;
+}
+
 @mixin title-1 {
   font: {
     size: $font-size-large;
@@ -13,4 +17,29 @@
 
 @mixin title-2 {
 
+}
+
+.title-1 {
+  @include title-1;
+
+  &.title-1--background {
+    h1 {
+      display: inline;
+      background: $color-white;
+      color: $color-black;
+    }
+
+    &.title-1--inverse {
+      h1 {
+        background: $color-black;
+        color: $color-white;
+      }
+    }
+  }
+
+  &.title-1--xxxx-large {
+    &, h1 {
+      @include font-size-xxxx-large;
+    }
+  }
 }

@@ -9,6 +9,7 @@ Text Domain:  Avada
 */
 
 @import 'typography';
+@import 'patterns/index';
 
 /*
 AVADA THEME OPTIONS OVERRIDES
@@ -30,19 +31,4 @@ Logo/Brand styles
  */
 .hd-brand {
   @include title-1;
-}
-
-/*
- * Hero styles
- */
-.hero {
-  .hero__image {
-    .fusion-column-wrapper {
-      min-height: 700px;
-    }
-  }
-
-  .hero__content {
-    color: $color-white;
-  }
 }
