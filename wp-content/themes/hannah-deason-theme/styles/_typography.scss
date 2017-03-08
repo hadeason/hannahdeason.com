@@ -1,0 +1,48 @@
+@mixin font-size-xxxx-large {
+  font-size: $font-size-xxxx-large;
+}
+
+@mixin title-1 {
+  font: {
+    size: $font-size-large;
+    family: $font-family-title;
+  }
+  color: $color-black;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+@mixin title-2 {
+
+}
+
+.title-1 {
+  @include title-1;
+
+  &.title-1--background {
+    h1 {
+      display: inline;
+      background: $color-white;
+      color: $color-black;
+    }
+
+    &.title-1--inverse {
+      h1 {
+        background: $color-black;
+        color: $color-white;
+      }
+    }
+  }
+
+  &.title-1--xxxx-large {
+    &, h1 {
+      @include font-size-xxxx-large;
+    }
+  }
+}
+
+.text--white {
+  &, h1, h2, h3, h4, h5, h6, p {
+    color: $color-white;
+  }
+}

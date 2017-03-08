@@ -1,0 +1,23 @@
+.panel__title {
+  &, h3 {
+    font-family: $font-family-lulo;
+    font-size: $font-size-xxx-large;
+    color: $color-black;
+
+    .text--white & {
+      color: $color-white;
+    }
+  }
+
+  &.panel__title--underline {
+    border-bottom: 5px solid $color-black;
+
+    .text--white & {
+      border-bottom-color: $color-white;
+    }
+  }
+}
+
+.panel__subhead {
+  font-size: $font-size-x-large;
+}

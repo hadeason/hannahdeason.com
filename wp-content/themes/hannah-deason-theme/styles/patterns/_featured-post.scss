@@ -1,0 +1,25 @@
+.featured-post {
+  text-align: center;
+}
+
+.featured-post__title, h4.featured-post__title {
+  font-size: $font-size-regular;
+  font-family: $font-family-lulo;
+  min-height: 70px;
+}
+
+.featured-post__image {
+  img {
+    width: 330px;
+    height: 321px;
+    object-fit: cover;
+
+    .featured-post--circle & {
+      border-radius: 50%;
+    }
+  }
+}
+
+.featured-post__date {
+  margin: 2*$spacing-inner 0;
+}

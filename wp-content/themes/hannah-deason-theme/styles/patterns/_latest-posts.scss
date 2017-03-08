@@ -1,0 +1,33 @@
+.latest-posts {
+  .fusion-column-wrapper {
+    color: $color-white;
+    border-radius: $border-radius-xx-large;
+    padding: $spacing-outer;
+  }
+
+  .title {
+    h4 {
+      color: $color-white;
+    }
+  }
+
+  .recent-posts-content {
+    border-bottom: 3px solid $color-white;
+
+    h4, p, a, .meta, .meta .date {
+      color: $color-white;
+    }
+
+    h4 {
+      font-size: $font-size-small;
+      font-family: $font-family-lulo;
+      color: $color-white;
+    }
+  }
+
+  /* Override fusion styles for meta */
+  .fusion-recent-posts .columns .column .meta {
+    font-size: $font-size-x-small;
+    font-family: $font-family-avenir;
+  }
+}
